@@ -1,0 +1,4 @@
+recursive-include synpla_weight/static *
+recursive-include synpla_weight/templates *.html
+include README.rst
+
