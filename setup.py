@@ -2,24 +2,24 @@ import os
 
 import setuptools
 
-module_path = os.path.join(os.path.dirname(__file__), 'synpla_datetimepicker/__init__.py')
+module_path = os.path.join(os.path.dirname(__file__), 'synpla_weight/__init__.py')
 version_line = [line for line in open(module_path)
                 if line.startswith('__version__')][0]
 
 __version__ = version_line.split('__version__ = ')[-1][1:][:-2]
 
 setuptools.setup(
-    name="synpla-datetimepicker",
+    name="synpla-weight",
     version=__version__,
-    url="https://github.com/Jaza/synpla-datetimepicker",
+    url="https://github.com/Jaza/synpla-weight",
 
     author="Jeremy Epstein",
     author_email="jazepstein@gmail.com",
 
-    description="Date / time picker JS functionality for SynPla.",
+    description="Weight JS functionality for SynPla.",
     long_description=open('README.rst').read(),
 
-    packages=['synpla_datetimepicker'],
+    packages=['synpla_weight'],
     include_package_data=True,
     zip_safe=False,
     platforms='any',
